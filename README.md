@@ -1,14 +1,43 @@
 # Datu-bazes-un-SQL
-Autori: Ņikita Dubovskis, Deivids Klimko 
-Kursa mērķis: Iepazīstināt studentus ar datubāzu (DB) pamatiem, to mērķi un SQL valodas izmantošanu datu pārvaldībā. 
-Projekta apraksts: Šī prezentācija ir mācību materiāls, kas pieejamā veidā izskaidro sarežģītus tehniskus jēdzienus. Datubāze tiek salīdzināta ar "lielu kasti vai piezīmju grāmatiņu" informācijas glabāšanai, un SQL ir "maģiska valoda" saziņai ar datoru. Galvenās tēmas: 
-Datubāzes jēdzieni: Kas ir datubāzes un kāpēc tās mums ir vajadzīgas (organizācija, drošība, piekļuve). 
-Struktūra: Tabulas, rindas, kolonnas, primārās atslēgas un ārējās atslēgas.
-Relāciju un nerelāciju datubāzes: Pieeju salīdzinājums (piemēram, MySQL pret MongoDB). 
-SQL valoda: Komandu grupas (DDL, DML, DQL, DCL, TCL). 
-Datu tipi un attiecības: VARCHAR, DECIMAL, INT; 1:1, 1:N, M:N attiecības. 
-Praktiskie uzdevumi.
-Prezentācijā iekļauti uzdevumi par: 
-Produkti tabulas noformēšanu. 
-SQL vaicājumu rakstīšana datu filtrēšanai, kārtošanai un modificēšanai.
-Teorētiski jautājumi, lai pārbaudītu zināšanas par attiecībām starp entītijām.
+
+Apmācības prezentācija, kas sagatavota kā daļa no kursa par datu struktūrām un vaicājumu valodas pamatiem.
+
+## 👥 Autori
+* **Ņikita Dubovskis**
+* **Devids Klimko**
+
+---
+
+## 🚀 Par projektu
+Šis projekts ir soli pa solim sniegta rokasgrāmata par datu bāzes pamatiem. Materiāls vienkāršā valodā izskaidro sarežģītus tehniskos terminus:
+* **Datu bāze** ir "liela kaste vai piezīmju grāmatiņa" informācijas glabāšanai.
+* **SQL** ir "maģiska valoda" saziņai ar datoru.
+
+## 📚 Galvenās tēmas
+### 1. Datu bāzes koncepcijas
+* Kāpēc ir nepieciešamas datu bāzes (efektivitāte, drošība, integritāte).
+* Relāciju (MySQL) un nerelāciju (MongoDB) datu bāzu salīdzinājums.
+
+### 2. Datu struktūra
+* Tabulas, rindas un kolonnas.
+* **Primārā atslēga** un **Ārējā atslēga**.
+* Relāciju veidi: 1:1, 1:N, M:N.
+
+### 3. SQL valoda
+Šajā prezentācijā ir apskatītas galvenās komandu grupas:
+* **DDL**: CREATE, ALTER, DROP
+* **DML**: INSERT, UPDATE, DELETE
+* **DQL**: SELECT
+* **TCL**: COMMIT, ROLLBACK
+
+---
+
+## 🛠 Praktiskie vingrinājumi
+Ietver vingrinājumus par Product tabulas noformēšanu un vaicājumu rakstīšanu.
+
+**SQL vaicājuma piemērs no kursa:**
+```sql
+-- Meklēt produktus, kas pārsniedz 20
+SELECT * FROM Produkti
+WHERE Price > 20
+ORDER BY Price ASC;
